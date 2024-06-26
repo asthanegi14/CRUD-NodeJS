@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport"
+             content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+
+<body>
+       <div class="container"
+            style="width: fit-content; padding: 10% 0; justify-content: center; display: flex; flex-direction: column; align-items: center; height: screen;">
+              <h1 class="heading">Add a new material to the database</h1>
+              <form action="/add"
+                    method="post"
+                    enctype="multipart/form-data">
+                     <div class="mb-3">
+                            <label for="name"
+                                   class="form-label">Name</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="name"
+                                   name="name"
+                                   required>
+                     </div>
+                     <div class="mb-3">
+                            <label for="technology"
+                                   class="form-label">Technology</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="technology"
+                                   name="technology"
+                                   required>
+                     </div>
+                     <div class="mb-3">
+                            <label for="colors"
+                                   class="form-label">Colors (comma-separated)</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="colors"
+                                   name="colors"
+                                   required>
+                     </div>
+                     <div class="mb-3">
+                            <label for="pricePerGram"
+                                   class="form-label">Price Per Gram</label>
+                            <input type="number"
+                                   step="0.01"
+                                   class="form-control"
+                                   id="pricePerGram"
+                                   name="pricePerGram"
+                                   required>
+                     </div>
+                     <div class="mb-3">
+                            <label for="applicationTypes"
+                                   class="form-label">Application Types (comma-separated)</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="applicationTypes"
+                                   name="applicationTypes"
+                                   required>
+                     </div>
+                     <div class="mb-3">
+                            <label for="image"
+                                   class="form-label">Upload Image</label>
+                            <input type="file"
+                                   class="form-control"
+                                   id="image"
+                                   name="image"
+                                   required>
+                     </div>
+                     <button type="submit"
+                             class="btn btn-primary">Add It</button>
+              </form>
+       </div>
+</body>
+
+</html>

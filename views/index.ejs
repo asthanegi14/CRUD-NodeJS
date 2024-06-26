@@ -1,0 +1,24 @@
+<%- include('layout/header')
+    %>
+    <% if(message)
+       {
+       %>
+        <div class="m-3 alert alert-dismissible fade show alert-<%= message.type %>"
+             role="alert">
+            <button class="btn-close"
+                    type="button"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"></button>
+            <strong>
+                <%= message.message
+                    %>
+            </strong>
+        </div>
+        <% }
+           %>
+
+            <%- include('layout/add')
+                %>
+
+                <%- include('layout/footer')
+                    %>
